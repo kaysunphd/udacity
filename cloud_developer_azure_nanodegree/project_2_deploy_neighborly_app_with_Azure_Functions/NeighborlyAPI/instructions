@@ -1,0 +1,164 @@
+# first login to your account
+az login
+
+# Function app and storage account names must be unique.
+storageName=neighborlyappstorage
+functionAppName=neighborly
+region=eastus
+resourceGroupName=neighborlyresourcegroup
+
+# Create a resource group.
+az group create --name neighborlyresourcegroup --location eastus
+
+# Create an Azure storage account in the resource group.
+az storage account create --name neighborlyappstorage --location eastus --resource-group neighborlyresourcegroup --sku Standard_LRS
+
+# Create a function app in the resource group.
+az functionapp create --name neighborly --storage-account neighborlyappstorage --consumption-plan-location eastus --resource-group neighborlyresourcegroup --functions-version 3 --os-type Linux --runtime python
+
+=======================================
+# create template code for function app
+# creates requirements.txt, local setting.json, host.json
+    func init starter --python
+=======================================
+
+accountName="neighborlycosmosdb" #needs to be lower case
+serverVersion='4.0'
+databaseName='neighborhooddata'
+collectionName1='advertisements'
+collectionName2='posts'
+
+# Create a Cosmos account for MongoDB
+az cosmosdb create --name neighborly --resource-group neighborlyresourcegroup --kind MongoDB --server-version 4.0 --default-consistency-level Eventual --enable-automatic-failover false
+
+=======================================
+# Define the index policy for the collection, with _id (dont need shard)
+    printf '[ { "key": {"keys": ["_id"]} } ]' > idxpolicy-$uniqueId.json
+=======================================
+
+# Create a MongoDB API Collection
+az cosmosdb mongodb collection create --account-name neighborly --resource-group neighborlyresourcegroup --database-name neighborhooddata --name advertisements --throughput 400
+
+az cosmosdb mongodb collection create --account-name neighborly --resource-group neighborlyresourcegroup --database-name neighborhooddata --name posts --throughput 400
+
+=======================================
+    az cosmosdb mongodb collection create --account-name neighborly --resource-group neighborlyresourcegroup --database-name neighborhooddata --name posts --shard 'id' --throughput 400 --idx @idxpolicy-$uniqueId.json
+=======================================
+
+# get the Azure Cosmo DB connection string and key
+endpoint=$(az cosmosdb show --name neighborly --resource-group neighborlyresourcegroup --query documentEndpoint --output json)
+
+key=$(az cosmosdb keys list --name neighborly --resource-group neighborlyresourcegroup --query primaryMasterKey --output json)
+
+# configure FunctionApp to use the Azure Cosmo DB connection string
+az functionapp config appsettings set --name neighborly --resource-group neighborlyresourcegroup --setting CosmosDB_Endpoint=https://neighborly.documents.azure.com:443/ 
+
+# Navigate to All Resources from the home page of the Azure portal to review
+
+# import sample data
+==> replace using mongodb compass
+
+=======================================
+    mongoimport --db dbName --collection collectionName --file fileName.json --jsonArray
+
+    mongoimport --uri "mongodb://neighborly:NcsuuiRAVEArnrz7krsbOZc9H9sPsIaEo9MGqm6m5s5YcHP4afW8F7p35n8qwBDOE2GWl7suit2n91Nw1lhZhw==@neighborly.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@neighborly@" --collection advertisements --file sampleAds.json --jsonArray
+
+    mongoimport --uri "mongodb://neighborly:NcsuuiRAVEArnrz7krsbOZc9H9sPsIaEo9MGqm6m5s5YcHP4afW8F7p35n8qwBDOE2GWl7suit2n91Nw1lhZhw==@neighborly.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@neighborly@" --collection posts --file samplePosts.json --type json --jsonArray
+=======================================
+
+# Hook up your connection string into the NeighborlyAPI server folder
+https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/connect-mongodb-account?WT.mc_id=udacity_learn-wwl
+
+# Test it out locally first.
+remove eventhubfolder
+
+# cd into NeighborlyAPI
+ cd NeighborlyAPI
+
+ # install dependencies
+ pipenv install
+
+ # go into the shell
+ pipenv shell
+
+ # test func locally
+ func start
+
+ # example endpoint for all advertisements
+ http://localhost:7071/api/getadvertisements
+
+ #example endpoint for all posts
+ http://localhost:7071/api/getposts
+
+Functions:
+PythonHttpExample: [GET,POST] http://localhost:7071/api/NeighborlyAPI
+goto http://localhost:7071/api/PythonHttpExample/?name=Azure%20Functions
+
+# Deploy the function project to Azure (do not deploy from within VS Code, does not work)
+func azure functionapp publish neighborly
+
+# create a new virtual environment with virtualenv tool, and name it venv
+python3 -m venv venv
+
+# activate the environment
+source venv/bin/activate
+
+# now install your dependencies
+pip install -r requirements.txt
+
+# export variable so the Azure stack knows which entry point to start your Flask app.  If your application file is named `application.py` or `something_else.py`, then you can replace that here.    
+export FLASK_RUN=app.py
+
+# now deploy your code to an existing webapp in Azure cloud
+==> create webapp in portal, then deploy from vs code
+
+=======================================
+# this doesnt work
+    az webapp up --sku F1 --name neighborly-client-k1 --location westus --resource-group neighborlyresourcegroup
+=======================================
+
+# create container register
+az acr create --resource-group neighborlyresourcegroup --name neighborlyapi --sku Basic
+
+# login to registry
+docker login neighborlyapi.azurecr.io
+
+# create Dockerfile
+func init --docker-only --python
+
+# create docker image
+run docker desktop
+docker build -t kay/neighborly-api-v1 "D:\github\starter\NeighborlyAPI"
+docker tag kay/neighborly-api-v1 neighborlyapi.azurecr.io/neighborly-api:v1
+az acr login --name neighborlyapi
+docker push neighborlyapi.azurecr.io/neighborly-api:v1
+
+# create AKS 
+==> error with ssh, have to manually create in azure portal - make sure to connect acr
+=======================================
+    az aks create --name neighborlyaks --resource-group neighborlyresourcegroup --node-count 1 --ssh-key-value "C:\Users\kay\.ssh\id_rsa" --location eastus --attach-acr conteinerregistry neighborlyapi
+
+    # update aks if acr not connected
+    az aks update --name neighborlyaks --resource-group neighborlyresourcegroup --attach-acr neighborlyapi
+=======================================
+
+# get credentials for your container service
+az aks get-credentials --name neighborlyaks --resource-group neighborlyresourcegroup
+
+# Verify the connection to your cluster
+kubectl get nodes
+
+az acr login --name neighborlyapi
+
+func kubernetes install --namespace keda  
+
+func kubernetes deploy --name neighborlyaks --image-name neighborlyapi.azurecr.io/neighborly-api:v1 --dry-run > deploy.yml
+
+# Deploy the function app to your container registry
+func kubernetes deploy --name neighborlyaks --image-name neighborlyapi.azurecr.io/neighborly-api:v1
+
+kubectl apply -f deploy.yml
+
+# Check your deployment
+kubectl config get-contexts
+kubectl get service --watch
