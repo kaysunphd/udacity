@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 700px) {
+  #content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .work__next {
+    min-width: 40%;
+    max-width: 50%;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero {
+    height: 250px;
+  }
+
+  #header__logo img {
+    height: 6em;
+    width: 6em;
+  }
+
+  #header__title {
+    margin: 0;
+  }
+
+  .work__next {
+    min-width: 90%;
+  }
+  
+  .work__next__item {
+    width: 100%;
+  }
+
+  .work__name {
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .work__name {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

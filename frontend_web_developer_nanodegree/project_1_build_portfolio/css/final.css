@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 500px) {
+  .work__description {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .work__description {
+    -webkit-line-clamp: 3;
+    max-height: 3.7em;
+  }
+}
+
+@media screen and (min-width: 900px) {  
+  .work__description {
+    -webkit-line-clamp: 4;
+    max-height: 4.9em;
+  }
+}
