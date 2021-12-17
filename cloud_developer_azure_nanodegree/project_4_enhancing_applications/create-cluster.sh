@@ -7,7 +7,8 @@ clusterName="udacity-cluster"
 # Install aks cli
 echo "Installing AKS CLI"
 
-az aks install-cli
+# add sudo for Linux
+sudo az aks install-cli
 
 echo "AKS CLI installed"
 
