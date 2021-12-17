@@ -1,0 +1,94 @@
+az login
+./setup-script.sh
+
+az vmss list-instance-connection-info \
+--resource-group acdnd-c4-project \
+--name udacity-vmss
+
+ssh udacityadmin@<ip> -p <port>
+
+sudo apt update
+sudo apt-get -y install python3 python3-dev
+sudo apt install python3-pip
+
+service nginx status
+redis-cli ping
+
+git clone https://github.com/kaysunphd/starter.git
+
+cd starter
+sudo apt install python3-flask
+sudo apt install python3-venv
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+python3 main.py
+
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-dev-start-howto-vm-python?view=azs-2008
+
+
+## AKS
+# Create images, and run the application locally using Docker.
+docker-compose up -d --build
+# View the application at http://localhost:8080/
+# You will see two new images - "azure-vote-front:v1" and "mcr.microsoft.com/oss/bitnami/redis:6.0.8" (built from "redis:6.0.8")
+docker images
+# Correspondingly, you will see two running containers - "azure-vote-front" and "azure-vote-back" 
+docker ps
+# Stop the application
+docker-compose down
+
+# In your terminal run the following
+az login
+# Navigate to the project starter code again, if not already
+cd nd081-c4-azure-performance-project-starter
+# Assuming the acdnd-c4-project resource group is still available with you
+chmod +x create-cluster.sh
+# The script below will create an AKS cluster, Configure kubectl to connect to your Kubernetes cluster, and Verify the connection to your cluster
+./create-cluster.sh
+
+# Assuming the acdnd-c4-project resource group is still available with you
+# ACR name should not have upper case letter
+az acr create --resource-group acdnd-c4-project --name myacr202106 --sku Basic
+# Log in to the ACR
+az acr login --name myacr202106
+# Get the ACR login server name
+# To use the azure-vote-front container image with ACR, the image needs to be tagged with the login server address of your registry. 
+# Find the login server address of your registry
+az acr show --name myacr202106 --query loginServer --output table
+# Associate a tag to the local image. You can use a different tag (say v2, v3, v4, ....) everytime you edit the underlying image. 
+docker tag azure-vote-front:v1 myacr202106.azurecr.io/azure-vote-front:v1
+# Now you will see myacr202106.azurecr.io/azure-vote-front:v1 if you run "docker images"
+# Push the local registry to remote ACR
+docker push myacr202106.azurecr.io/azure-vote-front:v1
+# Verify if your image is up in the cloud.
+az acr repository list --name myacr202106 --output table
+# Associate the AKS cluster with the ACR
+az aks update -n udacity-cluster -g acdnd-c4-project --attach-acr myacr202106
+
+# Get the ACR login server name
+az acr show --name myacr202106 --query loginServer --output table
+
+az aks get-credentials --resource-group acdnd-c4-project --name udacity-cluster
+
+# Make sure that the manifest file *azure-vote-all-in-one-redis.yaml*, has `myacr202106.azurecr.io/azure-vote-front:v1` as the image path.  
+# Deploy the application. Run the command below from the parent directory where the *azure-vote-all-in-one-redis.yaml* file is present. 
+kubectl apply -f azure-vote-all-in-one-redis.yaml
+# Test the application at the External IP
+# It will take a few minutes to come alive. 
+kubectl get service azure-vote-front --watch
+# You can also verify that the service is running like this
+kubectl get service
+# Check the status of each node
+kubectl get pods
+
+
+# Generate load in the terminal by creating a container with "busybox" image
+# Open the bash into the container
+kubectl run -it --rm load-generator --image=busybox /bin/sh
+while true; do wget -q -O- [Public-IP]; done
+
+# You can check the increase in the number of pods by using the command below
+kubectl get hpa
+kubectl describe hpa azure-vote-front
