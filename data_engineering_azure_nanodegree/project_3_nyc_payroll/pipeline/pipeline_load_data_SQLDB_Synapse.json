@@ -1,0 +1,41 @@
+{
+	"name": "pipeline_load_data_SQLDB_Synapse",
+	"properties": {
+		"activities": [
+			{
+				"name": "flowSQLDBSynapse",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "flow_payroll_SQLDB_synapse",
+						"type": "DataFlowReference"
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "DataLakeStorageSource",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "adlsnycpayroll-kay-s/dirstaging"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-09-07T16:02:51Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

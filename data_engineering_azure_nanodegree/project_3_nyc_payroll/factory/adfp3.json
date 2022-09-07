@@ -1,0 +1,17 @@
+{
+	"name": "adfp3",
+	"properties": {
+		"globalParameters": {
+			"Global_Fiscal_Year": {
+				"type": "int",
+				"value": 2021
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "85226347-b7bf-47bc-a4cd-e7d984d12650",
+		"tenantId": "8e6c8ebb-f349-4677-abb1-a823ab0dd83c"
+	}
+}
