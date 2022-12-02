@@ -1,0 +1,2816 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Store" selected="True" />
+            <SelectField field="Day" selected="False" type="Int16" size="2" />
+            <SelectField field="Month" selected="True" type="Int16" size="2" />
+            <SelectField field="Year" selected="True" type="Int16" size="2" />
+            <SelectField field="Dry_Grocery" selected="False" type="Double" size="8" />
+            <SelectField field="Dairy" selected="False" type="Double" size="8" />
+            <SelectField field="Frozen_Food" selected="False" type="Double" size="8" />
+            <SelectField field="Meat" selected="False" type="Double" size="8" />
+            <SelectField field="Produce" selected="True" type="Double" size="8" />
+            <SelectField field="Floral" selected="False" type="Double" size="8" />
+            <SelectField field="Deli" selected="False" type="Double" size="8" />
+            <SelectField field="Bakery" selected="False" type="Double" size="8" />
+            <SelectField field="General_Merchandise" selected="False" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>task1-output.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Value" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Dry_Grocery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Dairy" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Frozen_Food" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Meat" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Produce" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Floral" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Deli" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_Bakery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Sum_General_Merchandise" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Dry_Grocery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Dairy" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Frozen_Food" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Meat" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Produce" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Floral" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Deli" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_Bakery" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Percent_General_Merc" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Cluster" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="State" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task1-output.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Percent_Dry_Grocery" selected="False" />
+            <SelectField field="Sum_General_Merchandise" selected="False" />
+            <SelectField field="Sum_Bakery" selected="False" />
+            <SelectField field="Sum_Floral" selected="False" />
+            <SelectField field="Sum_Produce" selected="False" />
+            <SelectField field="Sum_Deli" selected="False" />
+            <SelectField field="Sum_Frozen_Food" selected="False" />
+            <SelectField field="Sum_Dairy" selected="False" />
+            <SelectField field="Sum_Dry_Grocery" selected="False" />
+            <SelectField field="Sum_Value" selected="False" />
+            <SelectField field="Year" selected="False" />
+            <SelectField field="Sum_Meat" selected="False" />
+            <SelectField field="Percent_Dairy" selected="False" />
+            <SelectField field="Cluster" selected="True" />
+            <SelectField field="Percent_Bakery" selected="False" />
+            <SelectField field="State" selected="False" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="Address" selected="False" />
+            <SelectField field="Percent_General_Merc" selected="False" />
+            <SelectField field="Store" selected="True" />
+            <SelectField field="Percent_Deli" selected="False" />
+            <SelectField field="Percent_Floral" selected="False" />
+            <SelectField field="Percent_Produce" selected="False" />
+            <SelectField field="Percent_Meat" selected="False" />
+            <SelectField field="Percent_Frozen_Food" selected="False" />
+            <SelectField field="Type" selected="False" />
+            <SelectField field="Zip" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="234" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Age0to9" selected="True" />
+            <Field field="Age10to17" selected="True" />
+            <Field field="Age18to24" selected="True" />
+            <Field field="Age25to29" selected="True" />
+            <Field field="Age30to39" selected="True" />
+            <Field field="Age40to49" selected="True" />
+            <Field field="Age50to64" selected="True" />
+            <Field field="Age65Plus" selected="True" />
+            <Field field="EdLTHS" selected="True" />
+            <Field field="EdHSGrad" selected="True" />
+            <Field field="EdSomeCol" selected="True" />
+            <Field field="EdAssociate" selected="True" />
+            <Field field="EdBachelor" selected="True" />
+            <Field field="EdMaster" selected="True" />
+            <Field field="EdProfSchl" selected="True" />
+            <Field field="EdDoctorate" selected="True" />
+            <Field field="HHSz1Per" selected="True" />
+            <Field field="HHSz2Per" selected="True" />
+            <Field field="HHSz3Per" selected="True" />
+            <Field field="HHSz4Per" selected="True" />
+            <Field field="HHSz5PlusPer" selected="True" />
+            <Field field="HHIncU25K" selected="True" />
+            <Field field="HHInc25Kto50K" selected="True" />
+            <Field field="HHInc50Kto75K" selected="True" />
+            <Field field="HHInc75Kto100K" selected="True" />
+            <Field field="HHInc100Kto150K" selected="True" />
+            <Field field="HHInc150Kto250K" selected="True" />
+            <Field field="HHInc250KPlus" selected="True" />
+            <Field field="PopAsian" selected="True" />
+            <Field field="PopBlack" selected="True" />
+            <Field field="PopHispanic" selected="True" />
+            <Field field="PopMulti" selected="True" />
+            <Field field="PopNativeAmer" selected="True" />
+            <Field field="PopOther" selected="True" />
+            <Field field="PopPacIsl" selected="True" />
+            <Field field="PopWhite" selected="True" />
+            <Field field="HVal0to100K" selected="True" />
+            <Field field="HVal100Kto200K" selected="True" />
+            <Field field="HVal200Kto300K" selected="True" />
+            <Field field="HVal300Kto400K" selected="True" />
+            <Field field="HVal400Kto500K" selected="True" />
+            <Field field="HVal500Kto750K" selected="True" />
+            <Field field="HVal750KPlus" selected="True" />
+            <Field field="PopDens" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="String" />
+            <Field name="Age0to9" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age10to17" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age18to24" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age25to29" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age30to39" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age40to49" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age50to64" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="Age65Plus" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdLTHS" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdHSGrad" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdSomeCol" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdAssociate" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdBachelor" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdMaster" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdProfSchl" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="EdDoctorate" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz1Per" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz2Per" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz3Per" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz4Per" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz5PlusPer" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHIncU25K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc25Kto50K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc50Kto75K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc75Kto100K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc100Kto150K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc150Kto250K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc250KPlus" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopAsian" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopBlack" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopHispanic" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopMulti" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopNativeAmer" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopOther" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopPacIsl" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopWhite" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal0to100K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal100Kto200K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal200Kto300K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal300Kto400K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal400Kto500K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal500Kto750K" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="HVal750KPlus" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+            <Field name="PopDens" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\storedemographicdata.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="534" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Sum_Produce" action="Avg" rename="Avg_Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:23:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-11-28 14:23:40</StartDate>
+              <EndDate>2022-11-28 14:23:40</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:23:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-11-28 14:23:53</StartDate>
+              <EndDate>2022-11-28 14:23:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "2"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="678" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:24:08</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>3</Operand>
+              <StartDate>2022-11-28 14:24:08</StartDate>
+              <EndDate>2022-11-28 14:24:08</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "3"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="786" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="ts_plot">False</Value>
+          <Value name="seas_plot">False</Value>
+          <Value name="seas_dev_plot">False</Value>
+          <Value name="acf_plot">False</Value>
+          <Value name="pacf_plot">False</Value>
+          <Value name="decomp_plot">True</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Plot.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_053a1946624c49ddaf30a787e2316cf6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="750" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="ts_plot">False</Value>
+          <Value name="seas_plot">False</Value>
+          <Value name="seas_dev_plot">False</Value>
+          <Value name="acf_plot">False</Value>
+          <Value name="pacf_plot">False</Value>
+          <Value name="decomp_plot">True</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Plot.yxmc" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_b8b65e8a6389476fb2f8f2178d2c7ee3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="750" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="ts_plot">False</Value>
+          <Value name="seas_plot">False</Value>
+          <Value name="seas_dev_plot">False</Value>
+          <Value name="acf_plot">False</Value>
+          <Value name="pacf_plot">False</Value>
+          <Value name="decomp_plot">True</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Plot.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="846" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_6c74cf5a4fc241588278fe970a030a81_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="438" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Store" action="GroupBy" rename="Store" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="930" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS-Store_Front1</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">True</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">False</Value>
+          <Value name="trend_type_auto">True</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">False</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">True</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">False</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="822" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:52:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>46</Operand>
+              <StartDate>2022-11-28 14:52:18</StartDate>
+              <EndDate>2022-11-28 14:52:18</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt;= 46</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="738" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1110" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_d82655218e154aa08ba338253cc62942_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings>
+        <Position x="942" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS-Store_Front2</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">True</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">False</Value>
+          <Value name="trend_type_auto">True</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">False</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">True</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">False</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:52:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>46</Operand>
+              <StartDate>2022-11-28 14:52:18</StartDate>
+              <EndDate>2022-11-28 14:52:18</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt;= 46</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="750" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1146" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_f4d072e2bcd14529ae3fe08692712193_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings>
+        <Position x="978" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS-Store_Front3</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">True</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">False</Value>
+          <Value name="trend_type_auto">True</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">False</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">True</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">False</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="870" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-11-28 14:52:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>46</Operand>
+              <StartDate>2022-11-28 14:52:18</StartDate>
+              <EndDate>2022-11-28 14:52:18</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt;= 46</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="786" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1086" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_7e7912d5363b42d9b12b58a714b5f322_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings>
+        <Position x="930" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ARIMA-Store_Front1</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="use_covar">False</Value>
+          <Value name="covars">""</Value>
+          <Value name="use_covar_mean">True</Value>
+          <Value name="use_covar_diff">False</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="custom_auto">False</Value>
+          <Value name="first_dif">False</Value>
+          <Value name="level_first_dif">0</Value>
+          <Value name="max_p">2</Value>
+          <Value name="max_q">2</Value>
+          <Value name="seas_dif">False</Value>
+          <Value name="level_seas_dif">0</Value>
+          <Value name="s_max_P">1</Value>
+          <Value name="s_max_Q">1</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">True</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="full_enum">False</Value>
+          <Value name="max_order">5</Value>
+          <Value name="m_core">False</Value>
+          <Value name="drift">True</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="full_custom">False</Value>
+          <Value name="p">0</Value>
+          <Value name="d">0</Value>
+          <Value name="q">0</Value>
+          <Value name="S_P">0</Value>
+          <Value name="S_D">0</Value>
+          <Value name="S_Q">0</Value>
+          <Value name="m_drift">False</Value>
+          <Value name="m_box_cox">False</Value>
+          <Value name="m_lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">1980</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.00</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1170" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_be4c409986244d549ba9f3c3f80f3952_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings>
+        <Position x="942" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ARIMA-Store_Front2</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="use_covar">False</Value>
+          <Value name="covars">""</Value>
+          <Value name="use_covar_mean">True</Value>
+          <Value name="use_covar_diff">False</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="custom_auto">False</Value>
+          <Value name="first_dif">False</Value>
+          <Value name="level_first_dif">0</Value>
+          <Value name="max_p">2</Value>
+          <Value name="max_q">2</Value>
+          <Value name="seas_dif">False</Value>
+          <Value name="level_seas_dif">0</Value>
+          <Value name="s_max_P">1</Value>
+          <Value name="s_max_Q">1</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">True</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="full_enum">False</Value>
+          <Value name="max_order">5</Value>
+          <Value name="m_core">False</Value>
+          <Value name="drift">True</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="full_custom">False</Value>
+          <Value name="p">0</Value>
+          <Value name="d">0</Value>
+          <Value name="q">0</Value>
+          <Value name="S_P">0</Value>
+          <Value name="S_D">0</Value>
+          <Value name="S_Q">0</Value>
+          <Value name="m_drift">False</Value>
+          <Value name="m_box_cox">False</Value>
+          <Value name="m_lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">1980</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.00</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1194" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_6786849b239b48b0b096c947ae11262a_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings>
+        <Position x="966" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ARIMA-Store_Front3</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="use_covar">False</Value>
+          <Value name="covars">""</Value>
+          <Value name="use_covar_mean">True</Value>
+          <Value name="use_covar_diff">False</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="custom_auto">False</Value>
+          <Value name="first_dif">False</Value>
+          <Value name="level_first_dif">0</Value>
+          <Value name="max_p">2</Value>
+          <Value name="max_q">2</Value>
+          <Value name="seas_dif">False</Value>
+          <Value name="level_seas_dif">0</Value>
+          <Value name="s_max_P">1</Value>
+          <Value name="s_max_Q">1</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">True</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="full_enum">False</Value>
+          <Value name="max_order">5</Value>
+          <Value name="m_core">False</Value>
+          <Value name="drift">True</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="full_custom">False</Value>
+          <Value name="p">0</Value>
+          <Value name="d">0</Value>
+          <Value name="q">0</Value>
+          <Value name="S_P">0</Value>
+          <Value name="S_D">0</Value>
+          <Value name="S_Q">0</Value>
+          <Value name="m_drift">False</Value>
+          <Value name="m_box_cox">False</Value>
+          <Value name="m_lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">1980</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.00</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1206" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_8edd7d08210a485f9b67e3f162cc1a07_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings>
+        <Position x="1350" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Compare.yxmc" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1230" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_e3cfdfa6c73341308cad7e788dd2948a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_01ce0429b9ac4332b8d3495fc61dc942_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings>
+        <Position x="1470" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Compare.yxmc" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1302" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1566" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_3a1b722cc7fc4e9baa3ad43a9745a7d6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1566" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_d6a061ae5c5b4f978cb0ac8de69172fc_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings>
+        <Position x="1446" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Compare.yxmc" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1266" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1542" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_8682c3382da64cd7907c555466eb1feb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1542" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_1545787e699c405287c0cab9f1d75c2c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="1230" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast-StoreFront3-ETS</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast_StoreFront3_ETS" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront3_ETS_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront3_ETS_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront3_ETS_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront3_ETS_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1326" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_2337ab2b0e3e4bbd9ef279da5d38cf77_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1338" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_644bb802ea194f8fb06bab0410bc009c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1086" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_e54f3edc72904994831b563dc09305c2_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1038" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_b54c413db967417f9ff4ce52b358cbc5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1026" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_cdef2c559a794c79b0cbdf836ab9754a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings>
+        <Position x="1266" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast-StoreFront2-ETS</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast_StoreFront2_ETS" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront2_ETS_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront2_ETS_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront2_ETS_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront2_ETS_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings>
+        <Position x="1338" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast-StoreFront1-ETS</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast_StoreFront1_ETS" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront1_ETS_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront1_ETS_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront1_ETS_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_StoreFront1_ETS_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1350" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_5fc07b62d8104edea6ce4fdb20ee3720_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1350" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_3dda4a7ae1e6458a8a0901070e9dbb8f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_c68513dd78be4af496b778b4884958c5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\kay\AppData\Local\Temp\Engine_23324_22bc18c871b043d98d327fd7e21ef09e_\Engine_21860_cd02c2314b664dbf914becfcb02c4a8d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1398" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">forecast-storefront1.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast-storefront1.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1590" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">forecast-storefront2.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast-storefront2.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1386" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">forecast-storefront3.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast-storefront3.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1110" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>task2-output.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="State" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Score_1" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Score_2" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="Score_3" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+            <Field name="cluster" size="254" source="File: D:\github\udacity\predictive_analytics_for_business_nanodegree\project_7_capstone\task2-output.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1206" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Store" selected="True" />
+            <SelectField field="cluster" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1302" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="cluster" action="GroupBy" rename="cluster" />
+            <SummarizeField field="Store" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="558" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Sum_Produce" action="Sum" rename="Sum_Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="690" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">actual_sales.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>actual_sales.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="318" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Store" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Interactive" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Interactive" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Interactive" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Interactive" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Report" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="False" />
+      <Destination ToolID="42" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="42" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Interactive" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Report" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="False" />
+      <Destination ToolID="47" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="47" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Interactive" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Report" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="False" />
+      <Destination ToolID="52" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="52" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Interactive" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Interactive" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Interactive" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Interactive" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Report" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Interactive" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Report" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Interactive" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Report" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Interactive Viz" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Report" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Interactive Viz" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Report" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Interactive Viz" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Report" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>task3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ff83fae8-07eb-41b4-8eaa-8f692133e8ae" />
+      <Telemetry>
+        <PreviousWorkflowId value="f4d7fe4f-9203-4973-8180-07adb324fea4" />
+        <OriginWorkflowId value="f4d7fe4f-9203-4973-8180-07adb324fea4" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
