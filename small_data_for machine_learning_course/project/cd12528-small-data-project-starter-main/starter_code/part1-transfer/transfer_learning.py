@@ -22,14 +22,20 @@ std = [0.229, 0.224, 0.225]
 # <<<YOUR CODE HERE>>>
 data_transforms = {
     'train': transforms.Compose([
+        transforms.RandomResizedCrop((150, 250)),
+        transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
     'val': transforms.Compose([
+        transforms.Resize((150, 250)),
+        transforms.CenterCrop((150, 250)),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
     'test': transforms.Compose([
+        transforms.Resize((150, 250)),
+        transforms.CenterCrop((150, 250)),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
@@ -67,12 +73,12 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = models.vgg16(weights='DEFAULT').to(device)
 
 # 2. Freeze layers so they won't all be trained again with our data
-for param in model.parameters():
+for param in model.features.parameters():
     param.requires_grad = False
 
 # 3. Replace top layer classifier with a classifer for our 3 categories
 model.classifier[6].out_features = 3
-# print(model.classifier)
+print(model.classifier)
 
 # Train model with these hyperparameters
 # 1. num_epochs 
@@ -81,10 +87,10 @@ model.classifier[6].out_features = 3
 # 4. train_lr_scheduler 
 
 # <<<YOUR CODE HERE>>>
-num_epochs = 2
+num_epochs = 5
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(model.classifier.parameters(), lr=0.001, momentum=0.9)
-train_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
+optimizer = optim.Adam(model.classifier.parameters(), lr=0.0001)
+train_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.5)
 
 
 # When you have all the parameters in place, uncomment these to use the functions imported above

@@ -177,7 +177,7 @@ def main():
     df_loan = df[df['Loan Status'] == 1]
     df_loan = df_loan.drop(columns=['Loan Status'], axis=1)
     df_loan.to_csv("data/loan_only.csv", index=False)
-    print(df_loan.describe())
+    #print(df_loan.describe())
 
     # Create DataLoaders for training and validation 
     train_data_set = DataBuilder(os.path.join(os.getcwd(), "data/loan_only.csv"), train=True)
@@ -192,7 +192,7 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
     loss_customloss = CustomLoss()
 
-    epochs = 10
+    epochs = 1000
     val_loss = []
     train_losses = []
     validate_losses = []
@@ -216,10 +216,11 @@ def main():
     df_fake_loan = pd.DataFrame(fake_data, columns=columns)
     # print(columns)
     # print(fake_data[0])
-    print(df_fake_loan.describe())
+    #print(df_fake_loan.describe())
 
-    df_fake_loan['Load Status'] = 1
+    df_fake_loan['Loan Status'] = 1
     df_expanded = pd.concat([df, df_fake_loan])
+    print(df_expanded['Loan Status'].value_counts())
     DATA_PATH = 'data/loan_continuous_expanded.csv'
     df_expanded.to_csv(DATA_PATH, index=False)
     test_model(DATA_PATH)
