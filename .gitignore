@@ -4,3 +4,8 @@ data_science_nanodegree/exercise_worldbank/.idea/
 *.pyc
 small_data_for machine_learning_course/.idea/
 small_data_for machine_learning_course/.ipynb_checkpoints/
+machine_learning_devops_engineer/clean_code_prinicples/customer_churn/.DS_Store
+machine_learning_devops_engineer/clean_code_prinicples/customer_churn/.ipynb_checkpoints/
+*.DS_Store
+machine_learning_devops_engineer/clean_code_prinicples/customer_churn/images/eda/.ipynb_checkpoints/
+machine_learning_devops_engineer/clean_code_prinicples/customer_churn/images/results/.ipynb_checkpoints/
