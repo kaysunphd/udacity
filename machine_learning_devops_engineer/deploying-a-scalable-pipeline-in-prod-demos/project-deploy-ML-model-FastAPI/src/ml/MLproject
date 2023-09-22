@@ -1,0 +1,14 @@
+name: ml
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+
+      input_artifact:
+        description: Name of input artifact
+        type: string
+
+
+    command: >-
+        python train_model.py  --input_artifact {input_artifact}

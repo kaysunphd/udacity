@@ -1,0 +1,6 @@
+name: test_runs
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: "pytest . -vv"

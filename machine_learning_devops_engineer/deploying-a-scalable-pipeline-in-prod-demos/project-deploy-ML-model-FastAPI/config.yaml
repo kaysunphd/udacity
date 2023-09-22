@@ -1,0 +1,15 @@
+main:
+  project_name: deploy_model
+  experiment_name: development
+  steps: all
+data:
+  cat_features: [
+                "workclass",
+                "education",
+                "marital_status",
+                "occupation",
+                "relationship",
+                "race",
+                "sex",
+                "native_country",
+                ]

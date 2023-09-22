@@ -1,0 +1,12 @@
+name: eda
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - pandas-profiling
+  - matplotlib
+  - ipykernel
+  - pip:
+      - wandb
+      - ydata-profiling

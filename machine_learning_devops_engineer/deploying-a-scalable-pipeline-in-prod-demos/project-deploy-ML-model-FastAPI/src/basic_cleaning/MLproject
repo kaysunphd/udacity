@@ -1,0 +1,22 @@
+name: basic_cleaning
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+
+      output_artifact:
+        description: Name of output artifact cleaned
+        type: string
+
+      output_type:
+        description: Type of output artifact
+        type: string
+
+      output_description:
+        description: Description of output artifact
+        type: string
+
+
+    command: >-
+        python run.py  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description} 

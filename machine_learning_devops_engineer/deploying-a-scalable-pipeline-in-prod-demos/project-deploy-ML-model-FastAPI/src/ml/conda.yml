@@ -1,0 +1,14 @@
+name: ml2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - scikit-learn
+  - pandas
+  - numpy
+  - mlflow
+  - pydantic
+  - yaml
+  - pip
+  - pip:
+      - wandb
