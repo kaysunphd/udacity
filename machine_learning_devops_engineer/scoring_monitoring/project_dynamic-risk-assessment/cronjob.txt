@@ -1,0 +1,1 @@
+*/10 * * * * python /udacity/machine_learning_devops_engineer/scoring_monitoring/project_dynamic-risk-assessment/app.py && python /udacity/machine_learning_devops_engineer/scoring_monitoring/project_dynamic-risk-assessment/fullprocess.py
